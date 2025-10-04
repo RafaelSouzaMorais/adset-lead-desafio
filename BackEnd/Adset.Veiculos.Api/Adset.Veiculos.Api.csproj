@@ -1,0 +1,49 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Aplicacoes\**" />
+    <Compile Remove="Applications\**" />
+    <Compile Remove="Dominio\**" />
+    <Compile Remove="Infraestrutura\**" />
+    <Content Remove="Aplicacoes\**" />
+    <Content Remove="Applications\**" />
+    <Content Remove="Dominio\**" />
+    <Content Remove="Infraestrutura\**" />
+    <EmbeddedResource Remove="Aplicacoes\**" />
+    <EmbeddedResource Remove="Applications\**" />
+    <EmbeddedResource Remove="Dominio\**" />
+    <EmbeddedResource Remove="Infraestrutura\**" />
+    <None Remove="Aplicacoes\**" />
+    <None Remove="Applications\**" />
+    <None Remove="Dominio\**" />
+    <None Remove="Infraestrutura\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.9">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+    <Folder Include="wwwroot\fotos\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Adset.Veiculos.Aplicacao\Adset.Veiculos.Aplicacao.csproj" />
+    <ProjectReference Include="..\Adset.Veiculos.Dominio\Adset.Veiculos.Dominio.csproj" />
+    <ProjectReference Include="..\Adset.Veiculos.Infraestrutura\Adset.Veiculos.Infraestrutura.csproj" />
+  </ItemGroup>
+
+</Project>

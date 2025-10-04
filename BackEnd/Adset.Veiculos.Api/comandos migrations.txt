@@ -1,0 +1,16 @@
+para criar a migration inicial e atualizar o banco de dados, execute os seguintes comandos no terminal na pasta do projeto Adset.Veiculos.Api:
+dotnet ef migrations add InitialCreate
+
+para aplicar a migration e criar o banco de dados, execute o comando:
+dotnet ef database update
+
+Se der erro , tente:
+instalar a ferramenta do Entity Framework Core com o comando:
+dotnet tool install --global dotnet-ef
+
+ou atualizar a ferramenta com o comando:
+dotnet tool update --global dotnet-ef
+
+verifive se foi instalado corretamente com o comando:
+dotnet ef
+
