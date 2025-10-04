@@ -1,0 +1,17 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/BackEnd/.vs
+/BackEnd/Adset.Vaiculos.Api/bin/Debug/net8.0
+/BackEnd/Adset.Vaiculos.Api/obj
+/BackEnd/Adset.Veiculos.Api/bin/Debug/net8.0
+/BackEnd/Adset.Veiculos.Api/obj
+/BackEnd/Adset.Veiculos.Aplicacao/bin/Debug/net8.0
+/BackEnd/Adset.Veiculos.Aplicacao/obj
+/BackEnd/Adset.Veiculos.Dominio/bin/Debug/net8.0
+/BackEnd/Adset.Veiculos.Dominio/obj
+/BackEnd/Adset.Veiculos.Infraestrutura/bin/Debug/net8.0
+/BackEnd/Adset.Veiculos.Infraestrutura/obj
+/BackEnd/WebApplication1/bin/Debug/net8.0
+/BackEnd/WebApplication1
